@@ -1,0 +1,55 @@
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    
+  }
+  
+  main{
+    display:flex;
+    min-height:800px;
+  }
+  
+  article{
+    flex-basis:60%;
+    background:red;
+    flex-grow:3;
+  }
+  a{
+    text-decoration:none;
+  }
+  
+  header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  
+  nav{
+    flex-basis:20%;
+    background:yellow;
+      flex-grow:1;
+  
+  }
+  
+  aside{
+    flex-basis:20%;
+    background:orange;
+    order:-1;
+      flex-grow:1;
+  
+  }
+  header, footer{
+    background:blue;
+      min-height:100px;
+  }
+  
+  @media all and (max-width:640px){
+    main{
+      flex-direction:column;
+    }
+    nav{
+    order:-1;  
+    }
+    
+  }
